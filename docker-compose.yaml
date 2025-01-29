@@ -1,0 +1,9 @@
+# Article about scale apps in docker containers
+# https://linuxhint.com/docker_compose_scale/
+services:
+  sveltekit:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
